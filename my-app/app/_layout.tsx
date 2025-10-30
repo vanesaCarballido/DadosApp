@@ -12,13 +12,12 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Dado Virtual</Text>
+      <Text style={styles.titulo}>Dado App</Text>
       
       <TouchableOpacity onPress={lanzarDado}>
         <Text style={styles.dadoNum}>{dado}</Text>
       </TouchableOpacity>
       
-      <Button title="Lanzar dado" onPress={lanzarDado} color="#5b0b54ff"/>
     </View>
   );
 }
@@ -38,7 +37,7 @@ const styles = StyleSheet.create({
   },
 
   dadoNum: {
-    fontSize: 100,
+    fontSize: 150,
     fontWeight: "bold",
     color:"#590b50b9",
     marginBottom:5
