@@ -12,7 +12,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Dado App</Text>
+      <Text style={styles.titulo}>Dados App</Text>
+      <Text style={styles.subtitulo}>Presiona el dado para lanzarlo: </Text>
       
       <TouchableOpacity onPress={lanzarDado}>
         <Text style={styles.dadoNum}>{dado}</Text>
@@ -42,4 +43,10 @@ const styles = StyleSheet.create({
     color:"#590b50b9",
     marginBottom:5
   },
+
+  subtitulo:{
+    fontSize: 20,
+    marginBottom: 5,
+    color:"#720756d2"
+  }
 });
